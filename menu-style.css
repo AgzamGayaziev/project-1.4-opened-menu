@@ -50,7 +50,7 @@
 }
 
 
-.body{
+.menu{
     width:320px;
     height: 100%;
     margin:0;
@@ -82,31 +82,31 @@
     display: block;
     width: auto;
 }
-.navigation-content__list{
+.main-menu__list{
     list-style: none;
     margin:25px 0 0 0;
     padding: 0;
 }
-.navigation-content__button{
+.main-menu__link{
     display: block;
     position: relative;
     text-decoration: none;
     color: #1B1C21;
     margin-bottom: 32px;
-    padding: 0 0 0 24px;
+    padding: 10px 0 10px 24px;
     font-weight: normal;
 }
-.navigation-content__button:active,
-.navigation-content__button:focus{
+.main-menu__link:active,
+.main-menu__link:focus{
     outline: 0;
     color: #7E7E82;
 }
-.navigation-content__button:active::before,
-.navigation-content__button:focus::before{
+.main-menu__link:active::before,
+.main-menu__link:focus::before{
     content: url("img/heading-design/highlight.svg");
     position: absolute;
     left: 0px;
-    top:-10px;
+    top:0;
 }
 .footer__navigation .navigation__item:nth-child(2),
 .footer__navigation .navigation__item:nth-child(3){
@@ -116,17 +116,17 @@
     margin-top: auto;
     margin-bottom:32px ;
 }
-.article{
+.contacts{
     padding: 0 0 0 24px;
     display: flex;
     flex-direction: column;
 }
-.article__link{
+.contacts__link{
     display: block;
     text-decoration: none;
     color: black;
 }
-.article__num-phone{
+.contacts__num-phone{
     margin-top: 12px;
 }
 .lang-nav{
@@ -138,17 +138,18 @@
     list-style: none;
     display: flex;
 }
-.lang-nav__link{
-    display: block;
-    text-decoration: none;
+.lang-nav__button{
+   border: none;
+    background: white;
     color: black;
+    padding: 0;
 }
 .lang-nav__item:nth-child(2),
 .lang-nav__item:nth-child(3){
     margin:0 0 0 7px;
 }
-.lang-nav__link:active,
-.lang-nav__link:focus{
+.lang-nav__button:active,
+.lang-nav__button:focus{
     outline: 0;
     color: #7E7E82;
 }
